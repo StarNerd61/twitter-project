@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'homepage' => 'devise/registrations#new.html.erb'
+  
+  get 'tweets/show'
+
+  get 'tweets/edit'
+
+  get 'tweets/update'
+
+  get 'tweets/destroy'
+  
+  get 'tweets/new'
+  
+  
+  
+  
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
